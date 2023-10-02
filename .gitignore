@@ -2,11 +2,14 @@
 __pycache__/
 *.py[cod]
 *$py.class
+test1
+test2
 
 # C extensions
 *.so
 
 # Distribution / packaging
+maintest.py
 .Python
 build/
 develop-eggs/
