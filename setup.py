@@ -1,7 +1,10 @@
+import os
+
 from setuptools import setup
 
 
 def get_version():
+    print(os.getcwd())
     with open("version.txt", "r", encoding="utf-8") as file:
         return file.read().split("\n")[0].strip()
 
@@ -28,10 +31,10 @@ setup(
     author="mhristodor",
     author_email="minumh99@gmail.com",
     license="MIT",
+    package_data={"version": ["version.txt"]},
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
-        "Topic :: Software Development :: Tools",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.11",
     ],
