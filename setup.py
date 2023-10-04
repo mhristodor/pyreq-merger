@@ -31,7 +31,6 @@ setup(
     author="mhristodor",
     author_email="minumh99@gmail.com",
     license="MIT",
-    package_data={"version": ["version.txt"]},
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
@@ -47,7 +46,6 @@ setup(
         "Funding": "https://www.buymeacoffee.com/m.hristodor",
     },
     install_requires=read_requirements(),
-    package_dir={"": "src"},
     python_requires=">=3.11",
     entry_points="""
     [console_scripts]
